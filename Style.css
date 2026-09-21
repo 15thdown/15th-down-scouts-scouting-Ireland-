@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f1e8;
+    color: #24351f;
+    line-height: 1.6;
+}
+
+
+/* HEADER */
+
+header {
+    background: #173d24;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d6c46a;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 80vh;
+
+    background:
+        linear-gradient(
+            rgba(10, 35, 18, 0.65),
+            rgba(10, 35, 18, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=2000&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+
+    padding: 30px;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+
+.button {
+    display: inline-block;
+    background: #d6a928;
+    color: #172719;
+    padding: 15px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #f0c94d;
+}
+
+
+/* SECTIONS */
+
+.section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+    color: #173d24;
+}
+
+.section > p {
+    max-width: 850px;
+    margin: 0 auto 18px;
+}
+
+
+/* ACTIVITIES */
+
+.activities-section {
+    background: #e5eadb;
+}
+
+.activities {
+    max-width: 1100px;
+    margin: 40px auto 0;
+
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px 22px;
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.1);
+
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #173d24;
+    margin-bottom: 12px;
+}
+
+
+/* QUOTE */
+
+.quote {
+    background: #173d24;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.quote h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+
+/* CONTACT */
+
+.contact {
+    background: #f4f1e8;
+}
+
+form {
+    max-width: 650px;
+    margin: 35px auto 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+
+    border: 2px solid #ccd3c4;
+    border-radius: 7px;
+
+    font-size: 16px;
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #173d24;
+}
+
+button {
+    background: #173d24;
+    color: white;
+
+    border: none;
+    border-radius: 7px;
+
+    padding: 15px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #285c38;
+}
+
+#formMessage {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #0d2516;
+    color: white;
+    text-align: center;
+
+    padding: 30px 20px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        min-height: 70vh;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 19px;
+    }
+
+    .activities {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 60px 6%;
+    }
+
+    .section h2 {
+        font-size: 32px;
+    }
+
+}
