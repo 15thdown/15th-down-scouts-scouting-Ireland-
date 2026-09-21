@@ -3,476 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>15th Down Scouting Ireland</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f2f5f0;
-            color: #243326;
-        }
-        header {
-            background: #173b25;
-            color: white;
-            padding: 18px 10px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            background: #2d6840;
-            padding: 9px 14px;
-            border-radius: 20px;
-            font-size: 14px;
-        }
-        nav a:hover {
-            background: #5d9b68;
-        }
-        .hero {
-            min-height: 80vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 40px 20px;
-            color: white;
-            background: linear-gradient(
-                135deg,
-                #173b25,
-                #2d6840,
-                #477b45
-            );
-        }
-        .hero-content {
-            max-width: 800px;
-        }
-        .hero h1 {
-            font-size: 55px;
-            margin: 0 0 20px 0;
-        }
-        .hero p {
-            font-size: 20px;
-            line-height: 1.6;
-        }
-        .button {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 14px 24px;
-            background: #f0b429;
-            color: #172719;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: bold;
-        }
-        section {
-            padding: 65px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        section h2 {
-            text-align: center;
-            color: #173b25;
-            font-size: 35px;
-            margin-bottom: 20px;
-        }
-        section > p {
-            text-align: center;
-            font-size: 17px;
-            line-height: 1.7;
-        }
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(
-                auto-fit,
-                minmax(220px, 1fr)
-            );
-            gap: 20px;
-            margin-top: 30px;
-        }
-        .card {
-            background: white;
-            padding: 25px;
-            border-radius: 18px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.10);
-        }
-        .icon {
-            font-size: 45px;
-        }
-        .card h3 {
-            color: #173b25;
-        }
-        #activities {
-            max-width: none;
-            background: #e5eee3;
-        }
-        #adventure {
-            max-width: none;
-            background: #f8f3e7;
-        }
-        #life {
-            max-width: none;
-            background: #f2f5f0;
-        }
-        #documents {
-            max-width: none;
-            background: #e8f0e5;
-        }
-        .pdf-button {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 12px 20px;
-            background: #f0b429;
-            color: #172719;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-        }
-        .contact-section {
-            max-width: none;
-            background: #173b25;
-            color: white;
-            text-align: center;
-        }
-        .contact-section h2 {
-            color: white;
-        }
-        .contact-section p {
-            color: white;
-        }
-        footer {
-            background: #102819;
-            color: white;
-            text-align: center;
-            padding: 25px 15px;
-        }
-        @media (max-width: 600px) {
-            .hero h1 {
-                font-size: 38px;
-            }
-            .hero p {
-                font-size: 17px;
-            }
-            nav a {
-                font-size: 12px;
-                padding: 8px 10px;
-            }
-            section {
-                padding: 50px 15px;
-            }
-        }
-    </style>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <header>
     <div class="logo">
         🌲 15th Down Scouting Ireland
     </div>
+
     <nav>
         <a href="#home">Home</a>
-        <a href="#about">About Us</a>
+        <a href="#about">About Our Scouts</a>
         <a href="#activities">Activities</a>
-        <a href="#adventure">Adventure</a>
-        <a href="#life">Our Life</a>
-        <a href="#documents">Documents</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact">Contact Us</a>
     </nav>
 </header>
-<section class="hero" id="home">
+
+
+<section id="home" class="hero">
+
     <div class="hero-content">
-        <h1>
-            🌲 15th Down Scouting Ireland
-        </h1>
+
+        <h1>15th Down Scouting Ireland</h1>
+
         <p>
             Adventure • Friendship • Skills • Community
         </p>
-        <p>
-            Welcome to 15th Down Scouting Ireland —
-            a place where young people learn new skills,
-            explore the outdoors and create memories together.
-        </p>
-        <a href="#about" class="button">
-            Explore Our Scouts 🧭
+
+        <a href="#activities" class="button">
+            Explore Our Activities
         </a>
+
     </div>
+
 </section>
-<section id="about">
-    <h2>
-        🧭 About Us
-    </h2>
+
+
+<section id="about" class="section">
+
+    <h2>About Our Scouts</h2>
+
     <p>
-        15th Down Scouting Ireland is all about adventure,
-        teamwork, learning and having fun. Scouting gives
-        young people the opportunity to try new things,
-        build confidence and make lifelong friendships.
+        Welcome to 15th Down Scouting Ireland.
+        We are a friendly scouting group where young people
+        can learn new skills, explore the outdoors and make
+        memories with friends.
     </p>
-    <div class="cards">
-        <div class="card">
-            <div class="icon">🤝</div>
-            <h3>
-                Teamwork
-            </h3>
-            <p>
-                Working together and supporting each other.
-            </p>
-        </div>
-        <div class="card">
-            <div class="icon">🌲</div>
-            <h3>
-                Outdoors
-            </h3>
-            <p>
-                Exploring the countryside and enjoying the outdoors.
-            </p>
-        </div>
-        <div class="card">
-            <div class="icon">⭐</div>
-            <h3>
-                Personal Growth
-            </h3>
-            <p>
-                Learning skills and becoming more confident.
-            </p>
-        </div>
-    </div>
+
+    <p>
+        Scouting is all about adventure, teamwork, confidence
+        and helping others. Our scouts take part in activities
+        that challenge them while having plenty of fun.
+    </p>
+
 </section>
-<section id="activities">
-    <h2>
-        🔥 Activities
-    </h2>
-    <p>
-        There is always something exciting happening in scouting.
-    </p>
-    <div class="cards">
+
+
+<section id="activities" class="section activities-section">
+
+    <h2>Our Activities</h2>
+
+    <div class="activities">
+
         <div class="card">
-            <div class="icon">🏕️</div>
-            <h3>
-                Camping
-            </h3>
+            <div class="icon">⛺</div>
+            <h3>Camping</h3>
             <p>
-                Get outdoors and experience life under canvas.
+                Learn camping skills, cook outdoors and enjoy
+                exciting nights under the stars.
             </p>
         </div>
-        <div class="card">
-            <div class="icon">🔥</div>
-            <h3>
-                Campfires
-            </h3>
-            <p>
-                Stories, games, food and great memories around the fire.
-            </p>
-        </div>
+
+
         <div class="card">
             <div class="icon">🥾</div>
-            <h3>
-                Hiking
-            </h3>
+            <h3>Hiking & Exploring</h3>
             <p>
-                Explore trails and discover new places.
+                Explore the countryside, follow trails and
+                discover new places.
             </p>
         </div>
+
+
         <div class="card">
             <div class="icon">🧭</div>
-            <h3>
-                Navigation
-            </h3>
+            <h3>Navigation</h3>
             <p>
-                Learn how to navigate using maps and compasses.
+                Learn map reading, compass skills and how to
+                find your way on an adventure.
             </p>
         </div>
+
+
+        <div class="card">
+            <div class="icon">🔥</div>
+            <h3>Campcraft</h3>
+            <p>
+                Learn practical outdoor skills including
+                fires, shelters and cooking.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">🤝</div>
+            <h3>Teamwork</h3>
+            <p>
+                Work together, solve challenges and build
+                confidence with your fellow scouts.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">🌳</div>
+            <h3>Community & Nature</h3>
+            <p>
+                Get involved in the community and learn how
+                to look after the environment.
+            </p>
+        </div>
+
     </div>
+
 </section>
-<section id="adventure">
-    <h2>
-        🥾 Adventure &amp; Skills
-    </h2>
+
+
+<section class="quote">
+
+    <h2>“Adventure starts where the comfort zone ends.”</h2>
+
     <p>
-        Scouting isn't just about having fun.
-        It's about learning useful skills that can
-        be used throughout life.
+        Learn skills. Make friends. Have adventures.
     </p>
-    <div class="cards">
-        <div class="card">
-            <div class="icon">🪢</div>
-            <h3>
-                Knots
-            </h3>
-            <p>
-                Learn useful knots and pioneering skills.
-            </p>
-        </div>
-        <div class="card">
-            <div class="icon">🗺️</div>
-            <h3>
-                Map Reading
-            </h3>
-            <p>
-                Learn to understand maps and plan routes.
-            </p>
-        </div>
-        <div class="card">
-            <div class="icon">🚑</div>
-            <h3>
-                First Aid
-            </h3>
-            <p>
-                Develop important first-aid and emergency skills.
-            </p>
-        </div>
-        <div class="card">
-            <div class="icon">🏆</div>
-            <h3>
-                Challenges
-            </h3>
-            <p>
-                Take on challenges and learn from new experiences.
-            </p>
-        </div>
-    </div>
+
 </section>
-<section id="life">
-    <h2>
-        📸 Our Scouting Life
-    </h2>
-    <p>
-        From camps and hikes to activities and community events,
-        scouting is packed with moments worth remembering.
-    </p>
-    <div class="cards">
-        <div class="card">
-            <div class="icon">🏕️</div>
-            <h3>
-                Camp Life
-            </h3>
-            <p>
-                Making memories outdoors with friends.
-            </p>
-        </div>
-        <div class="card">
-            <div class="icon">🌄</div>
-            <h3>
-                Adventure
-            </h3>
-            <p>
-                Getting outside and discovering somewhere new.
-            </p>
-        </div>
-        <div class="card">
-            <div class="icon">📸</div>
-            <h3>
-                Memories
-            </h3>
-            <p>
-                Capturing the moments that make scouting special.
-            </p>
-        </div>
-    </div>
-</section>
-<section id="documents">
-    <h2>
-        📄 Documents
-    </h2>
-    <p>
-        Find useful information, forms and documents
-        from 15th Down Scouting Ireland.
-    </p>
-    <div class="cards">
-        <div class="card">
-            <div class="icon">📋</div>
-            <h3>
-                Permission Forms
-            </h3>
-            <p>
-                View and download scouting permission forms.
-            </p>
-            <a
-                href="permission-form.pdf"
-                class="pdf-button"
-                target="_blank"
-            >
-                📄 View PDF
-            </a>
-        </div>
-        <div class="card">
-            <div class="icon">🏕️</div>
-            <h3>
-                Camp Information
-            </h3>
-            <p>
-                Important information for upcoming camps.
-            </p>
-            <a
-                href="camp-information.pdf"
-                class="pdf-button"
-                target="_blank"
-            >
-                📄 View PDF
-            </a>
-        </div>
-        <div class="card">
-            <div class="icon">🧭</div>
-            <h3>
-                Adventure Skills Handbook
-            </h3>
-            <p>
-                Learn outdoor skills, techniques and useful
-                scouting knowledge.
-            </p>
-            <a
-                href="Adventure-skills-handbook.pdf"
-                class="pdf-button"
-                target="_blank"
-            >
-                📖 View Handbook
-            </a>
-        </div>
-    </div>
-</section>
-<section class="contact-section" id="contact">
-    <h2>
-        📧 Contact Us
-    </h2>
+
+
+<section id="contact" class="section contact">
+
+    <h2>Contact Us</h2>
+
     <p>
         Want to find out more about 15th Down Scouting Ireland?
         Get in touch with us.
     </p>
-    <a
-        href="mailto:15thdownscouts@gmail.com"
-        class="button"
-    >
-        Contact Us 📧
-    </a>
+
+
+    <form id="contactForm">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            required
+        >
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Your Email"
+            required
+        >
+
+        <textarea
+            id="message"
+            placeholder="Your Message"
+            rows="6"
+            required
+        ></textarea>
+
+        <button type="submit">
+            Send Message
+        </button>
+
+    </form>
+
+    <p id="formMessage"></p>
+
 </section>
+
+
 <footer>
-    <p>
-        🌲 15th Down Scouting Ireland
-    </p>
-    <p>
-        Adventure • Skills • Friendship • Community
-    </p>
+
     <p>
         © 2026 15th Down Scouting Ireland
     </p>
+
+    <p>
+        Adventure • Friendship • Skills • Community
+    </p>
+
 </footer>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
